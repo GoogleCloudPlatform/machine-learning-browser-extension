@@ -1,0 +1,63 @@
+{
+  "name": "google-cloud-machine-learning-browser-extension",
+  "description": "Browser extension demonstrating Google Cloud APIs related to machine learning.",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Google, Inc.",
+  "contributors": [
+    {
+      "name": "Jason Hall",
+      "email": "jasonhall@google.com"
+    },
+    {
+      "name": "Tim Swast",
+      "email": "swast@google.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoogleCloudPlatform/machine-learning-browser-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GoogleCloudPlatform/machine-learning-browser-extension/issues"
+  },
+  "homepage": "https://github.com/GoogleCloudPlatform/machine-learning-browser-extension#readme",
+  "semistandard": {
+    "globals": [
+      "assert",
+      "API_KEY",
+      "before",
+      "casper",
+      "chrome",
+      "contextMenus",
+      "describe",
+      "Event",
+      "FileReader",
+      "Image",
+      "it",
+      "XMLHttpRequest"
+    ],
+    "ignore": [
+      "**/node_modules/**",
+      "coverage/",
+      "chrome/config.json"
+    ]
+  },
+  "scripts": {
+    "lint": "semistandard \"**/*.js\"",
+    "karma": "karma start chrome/karma.conf.js",
+    "test": "npm run lint && npm run karma"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^1.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.0",
+    "karma-mocha": "^1.1.1",
+    "mocha": "^2.5.3",
+    "semistandard": "^8.0.0",
+    "sinon-chrome": "^1.1.2"
+  }
+}
