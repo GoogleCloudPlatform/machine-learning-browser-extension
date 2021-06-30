@@ -1,3 +1,7 @@
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+
+This project is no longer actively developed or maintained.
+
 # Browser Extensions for Google Cloud Platform Machine Learning APIs
 
 This repo contains browser extensions for playing with [Google Cloud
